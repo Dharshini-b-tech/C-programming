@@ -1,6 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    printf("1 + 2 = %d", 1 + 2);
-    return 0;
+    int a,b;
+    a=5;
+    b=3;
+	printf("The result of5+3 is: %d",a+b);
+	return 0;
+
 }
+
