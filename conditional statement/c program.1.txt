@@ -1,27 +1,28 @@
-
 #include <stdio.h>
 
 int main() {
-    int percentage;
-    scanf("%d",&percentage);
-    if(percentage>=95){
+    int a,b,c,d,e,f;
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    float average=(a+b+c+d+e+f)/6;
+    printf("AVERAGE: %.2f\n",average);
+    
+    if(average>=90){
         printf("A");
     }
-    else if(percentage>=85){
+    else if(average>=80){
         printf("B");
     }
-    else if(percentage>=75){
+    else if(average>=70){
         printf("C");
     }
-    else if(percentage>=65){
+    else if(average>=60){
         printf("D");
     }
-    else if(percentage>=45){
+    else if(average>=50){
         printf("E");
     }
     else{
         printf("F");
     }
-
     return 0;
 }
