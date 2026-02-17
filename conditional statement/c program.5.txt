@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(){
+    int step,time;
+    scanf("%d %d",&step,&time);
+    
+    if(step>=10000 && time<=60){
+        printf("Fitneeslevel = Excellent\n");
+    }
+    else if(step>=7000 && time<=90){
+        printf("Fitnesslevel = Good\n");
+    }
+    else if(step>=4000){
+        printf("Fitnesslevel = average\n");
+    }
+    else{
+        printf("Fitnesslevel = poor\n");
+    }
+    
+}
