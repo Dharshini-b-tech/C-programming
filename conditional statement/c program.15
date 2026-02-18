@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+   int pen,note,pencil,total;
+   scanf("%d %d %d",&pen,&note,&pencil);
+   pen=pen*20;
+   note=note*70;
+   pencil=pencil*9;
+   total=pen+note+pencil;
+   printf("total= %d",total);
+
+    return 0;
+}
