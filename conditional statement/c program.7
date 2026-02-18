@@ -4,10 +4,7 @@ int main() {
     char gender;
     int salary = 0;
 
-    printf("Enter hours worked in a week: ");
     scanf("%d", &hours);
-
-    printf("Enter gender (M/F): ");
     scanf(" %c", &gender);
 
     if (hours <= 8) {
@@ -18,18 +15,15 @@ int main() {
         }
     } 
     else { 
-        // First 8 hours
         if (gender == 'M' || gender == 'm') {
             salary = 8 * 80;
         } else if (gender == 'F' || gender == 'f') {
             salary = 8 * 60;
         }
 
-        // Extra hours
         salary = salary + (hours - 8) * 100;
     }
 
     printf("Total Salary = Rs.%d\n", salary);
-
     return 0;
 }
