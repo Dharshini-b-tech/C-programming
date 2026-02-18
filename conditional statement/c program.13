@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+    scanf("%d",&age);
+    
+    if(age<=13){
+        printf("60");
+    }
+    else if(age<=20){
+        printf("120");
+    }
+    else if(age<60){
+        printf("170");
+    }
+    else{
+        printf("200");
+    }
+
+    return 0;
+}
