@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int tickets,age;
+    float total=0,price,discount;
+    scanf("%d",&tickets);
+    for(int i=1;i<=tickets;i++){
+        scanf("%d",&age);
+        
+        if(age<=12)
+            price=100;
+        else if(age<=18)
+            price=150;
+        else if(age<=59)
+            price=200;
+        else
+            price=120;
+        
+        total=total+price;
+        }
+    if(tickets>8){
+        discount=total*0.11;
+        total=total-discount;
+    }
+    printf("%.2f",total);
+
+    return 0;
+}
